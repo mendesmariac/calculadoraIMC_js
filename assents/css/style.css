@@ -23,9 +23,8 @@ body{
     gap: 3.5rem;
 
 }
-#img img{
-    width: 32rem;
-    right: auto;
+#img img {
+    width: 31rem;
 }
 
 #calculator {
@@ -34,7 +33,7 @@ body{
     gap: 2rem;
     padding: 2rem;
     color: #f8fafc;
-    background: color #262626; ;
+    background-color:  #262626; ;
     border-radius: 8px;
 }
 
@@ -50,17 +49,18 @@ body{
 }
 
 #title::after{
-    position: relative;
+    position: absolute;
     content: '';
     background-color: #16a34a;
     width: 8rem;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
     border-radius: 3px;
 }
 .input-box label {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: #cbd5e1;
     font-weight: 500;
 }
@@ -79,7 +79,7 @@ body{
 .input-field i {
     color:#cbd5e1;
     font-size: 1.3rem;
-    padding: 0.6rem;
+    padding: 0.6rem 1rem;
 }
 
 .input-field input {
@@ -107,9 +107,10 @@ body{
     font-weight: bold;
     background-color: #16a34a;
     color: #f8fafc;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     border-radius: 3px;
     cursor: pointer;
+    width: 100%;
 }
 
 #result {
@@ -153,8 +154,31 @@ body{
     transition: color 0.5s;
 }
 
-#more_info a {
+#more_info a:hover {
     color: #f8fafc;
 }
 
-.hidden
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #img {
+        display: none;
+    }
+}
+
+@media  and (max-width: 500px) {
+    #img {
+        display: none;
+    }
+    
+}
+
+.normal {
+    color:#16a34a ;
+}
+
+.attention {
+    color: #dc2626;
+}
