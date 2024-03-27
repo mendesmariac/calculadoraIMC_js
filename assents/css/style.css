@@ -20,11 +20,12 @@ body{
 #container {
     display: flex;
     align-items: center;
-    gap: 3.5rem;
+    gap: 15rem;
 
 }
 #img img {
-    width: 31rem;
+   width: 35rem;
+   float: right;
 }
 
 #calculator {
@@ -51,7 +52,7 @@ body{
 #title::after{
     position: absolute;
     content: '';
-    background-color: #16a34a;
+    background-color: #6C63FF;
     width: 8rem;
     height: 3px;
     bottom: 0;
@@ -105,7 +106,7 @@ body{
     border: none;
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: #16a34a;
+    background-color: #6C63FF;
     color: #f8fafc;
     padding: 0.5rem 0;
     border-radius: 3px;
@@ -138,13 +139,12 @@ body{
 }
 
 #more_info {
-    text-align: center;
     border-top: 1px solid #ffffff34;
     padding: 1.5rem;
 }
 
 #more_info a {
-    color: #16a34a;
+    color: #6C63FF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@ body{
 }
 
 #more_info a:hover {
-    color: #f8fafc;
+    color: #6C63FF;
 }
 
 .hidden {
